@@ -2,11 +2,11 @@ from PySimpleGUI import PySimpleGUI as sg
 
 # Layout
 
-sg.theme('Dark')
+sg.theme('Reddit')
 layout = [
     [sg.Text('Usuário'), sg.Input(key='usuario', size=(20, 1))],
     [sg.Text('Senha  '), sg.Input(key='senha', password_char='*', size=(20, 1))],
-    [sg.Text('Salvar Login?')],
+    [sg.Ckeckbox('Salvar Login?')],
     [sg.Button('Entrar')]
 ]
 # Janela
